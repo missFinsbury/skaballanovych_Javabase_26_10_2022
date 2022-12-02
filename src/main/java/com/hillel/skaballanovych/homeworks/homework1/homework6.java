@@ -2,7 +2,7 @@ package com.hillel.skaballanovych.homeworks.homework1;
 
 import java.util.Scanner;
 
-public class пшеhomework6 {
+public class homework6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -71,7 +71,14 @@ public class пшеhomework6 {
         if (AvarageFrag2 > AvarageFrag1) {
             System.out.println("Team 2 is a winner");
         }
-//jjkl
+        if(AvarageFrag2 == AvarageFrag1) {
+            System.out.println("Dead heat");
+        }
+        if (AvarageFrag2 > AvarageFrag1) {
+            System.out.println("with the result = " + AvarageFrag2);
+        } else System.out.println("with the result = " + AvarageFrag1);
+
+//end
     }
 
 
