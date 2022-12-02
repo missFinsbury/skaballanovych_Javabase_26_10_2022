@@ -71,11 +71,17 @@ public class homework6 {
         if (AvarageFrag2 > AvarageFrag1) {
             System.out.println("Team 2 is a winner");
         }
-        if(AvarageFrag2 == AvarageFrag1) {
+        if (AvarageFrag2 > AvarageFrag1) {
+            System.out.println("with the result = " + AvarageFrag2);
+        } if (AvarageFrag1 > AvarageFrag2) {
+            System.out.println("with the result = " + AvarageFrag1);
+    }
+        if (AvarageFrag2 == AvarageFrag1) {
             System.out.println("Dead heat");
             int result = AvarageFrag2;
             System.out.println("with the result = " + result);
         }
+
 
 
 //end!
