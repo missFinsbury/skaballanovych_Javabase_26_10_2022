@@ -73,12 +73,12 @@ public class homework6 {
         }
         if(AvarageFrag2 == AvarageFrag1) {
             System.out.println("Dead heat");
+            int result = AvarageFrag2;
+            System.out.println("with the result = " + result);
         }
-        if (AvarageFrag2 > AvarageFrag1) {
-            System.out.println("with the result = " + AvarageFrag2);
-        } else System.out.println("with the result = " + AvarageFrag1);
 
-//end
+
+//end!
     }
 
 
