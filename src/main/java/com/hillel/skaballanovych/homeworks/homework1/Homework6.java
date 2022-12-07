@@ -2,7 +2,7 @@ package com.hillel.skaballanovych.homeworks.homework1;
 
 import java.util.Scanner;
 
-public class homework6 {
+public class Homework6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -57,32 +57,30 @@ public class homework6 {
         System.out.println(player1Team1);
 
         System.out.println("Avarage frag amount of team 1");
-        int AvarageFrag1 = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1);
-        System.out.println(AvarageFrag1);
+        double avarageFrag1 = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
+        System.out.println(avarageFrag1);
 
 
         System.out.println("Avarage frag amount of team 2");
-        int AvarageFrag2 = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2);
-        System.out.println(AvarageFrag2);
+        double avarageFrag2 = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
+        System.out.println(avarageFrag2);
 
-        if (AvarageFrag1 > AvarageFrag2) {
+        if (avarageFrag1 > avarageFrag2) {
             System.out.println("Team 1 is a winner");
         }
-        if (AvarageFrag2 > AvarageFrag1) {
+        if (avarageFrag2 > avarageFrag1) {
             System.out.println("Team 2 is a winner");
         }
-        if (AvarageFrag2 > AvarageFrag1) {
-            System.out.println("with the result = " + AvarageFrag2);
-        } if (AvarageFrag1 > AvarageFrag2) {
-            System.out.println("with the result = " + AvarageFrag1);
+        if (avarageFrag2 > avarageFrag1) {
+            System.out.println("with the result = " + avarageFrag2);
+        } if (avarageFrag1 > avarageFrag2) {
+            System.out.println("with the result = " + avarageFrag1);
     }
-        if (AvarageFrag2 == AvarageFrag1) {
+        if (avarageFrag2 == avarageFrag1) {
             System.out.println("Dead heat");
-            int result = AvarageFrag2;
+            double result = avarageFrag2;
             System.out.println("with the result = " + result);
         }
-
-
 
 //end!
     }
