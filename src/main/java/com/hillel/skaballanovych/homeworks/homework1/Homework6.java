@@ -57,12 +57,12 @@ public class Homework6 {
         System.out.println(player1Team1);
 
         System.out.println("Avarage frag amount of team 1");
-        double avarageFrag1 = (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
+        double avarageFrag1 =(double) (player1Team1 + player2Team1 + player3Team1 + player4Team1 + player5Team1)/5;
         System.out.println(avarageFrag1);
 
 
         System.out.println("Avarage frag amount of team 2");
-        double avarageFrag2 = (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
+        double avarageFrag2 =(double) (player1Team2 + player2Team2 + player3Team2 + player4Team2 + player5Team2)/5;
         System.out.println(avarageFrag2);
 
         if (avarageFrag1 > avarageFrag2) {
