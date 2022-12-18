@@ -4,34 +4,49 @@ import java.util.Scanner;
 
 public class Homework7 {
     public static void main(String[] args) {
-        System.out.println("Guess number from 0 to 10 with 3 attempts");
-        Scanner scanner1 = new Scanner(System.in);
-        int x = (int) (Math.random() * 11);
-        int try1 = scanner1.nextInt();
+            Scanner scanner1 = new Scanner(System.in);
+            int try1;
+            int x = (int) (Math.random() * 11);
+            int attempts = 3;
 
-        for (int iterator = 3; iterator <= 3; iterator--) {
-            if ( iterator == 0) {
-                System.out.println("Bad beat");
-                break;
+            System.out.println("Guess number from 0 to 10 with 3 attempts");
+            for (int iterator = 1; iterator <= 3; iterator++) {
 
-            } else if (try1 == x) {
-                System.out.println("Win!!");
-                break;
+                System.out.println("Attemps: " + attempts);
 
-            } else if (try1 < x) {
-                System.out.println("Number is bigger");
-                scanner1.nextLine();
+                if (scanner1.hasNextInt()) {
+                    try1 = scanner1.nextInt();
+                    if (try1 < 0 || try1 > 10) {
+                        System.out.println("Enter from 0 to 10");
+                        iterator--;
+                        continue;
+                    }
 
-            } else if (try1 > 10) {
-                System.out.println("Wrong data");
-                scanner1.nextLine();
+                    if (try1 == x) {
+                        System.out.println("Win!!");
+                        break;
+                    } else if (try1 < x) {
+                        System.out.println("Number is bigger");
+                        scanner1.nextLine();
+                    } else {
+                        System.out.println("Number is smaller");
+                        scanner1.nextLine();
+                    }
 
-            } else {
-                System.out.println("Number is smaller");
-                scanner1.nextLine();
+                    if(iterator == 3) {
+                        System.out.println("Bad beat");
+                    }
+
+                    attempts--;
+
+                } else {
+                    System.out.println("Wrong data, enter numbers");
+                    scanner1.nextLine();
+                    iterator--;
+                }
+
             }
 
-        }
 
         }
 
@@ -41,14 +56,8 @@ public class Homework7 {
 
 
 
-
-
-
-
-
-
-    //Зробити гру, в якій потрібно відгадати ціле число, яке "загадав" комп'ютер
-    // у діапазоні від 0 до 10
-    //Користувач повинен мати можливість вгадувати в кілька спроб (мінімум 3).
+//Зробити гру, в якій потрібно відгадати ціле число, яке "загадав" комп'ютер
+// у діапазоні від 0 до 10
+//Користувач повинен мати можливість вгадувати в кілька спроб (мінімум 3).
 
 
